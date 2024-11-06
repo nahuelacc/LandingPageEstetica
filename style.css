@@ -1,0 +1,1076 @@
+* { 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: black;
+  margin: 15px  0 20px 0;
+}
+  
+  #header {
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 80px;
+   background: #e3e6f3;
+   box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.06);
+   z-index: 999;
+   position: sticky;
+   top: 0;
+   left: 0;
+ }
+  
+  body {
+    margin: 0px;
+    font-family: sans-serif;
+  }
+  
+  #navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #navbar li {
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+  }
+  
+  #navbar li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 260;
+    color: #1a1a1a;
+    font-family: sans-serif;
+    transition: 0.3s ease;
+  }
+  
+#navbar li a:hover,
+#navbar li a.active {
+  color: #088178;
+}
+
+#navbar li a.active::after, 
+#navbar li a:hover::after {
+content: "";
+width: 30%;
+height: 2px;
+background: #088178;
+position: absolute;
+bottom: -4px;
+left: 20px;
+}
+
+
+
+#hero{
+  text-align: center;
+background-image: url(imagenes/Hero\ 1.png);
+background-color: rgba(255, 222, 245, 0.8);
+  height: 90vh;
+  width: 100%;
+  background-position: top 25% right 0;
+  background-size: cover;
+  padding: 0 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 150px;
+}
+
+#hero h1, #hero h2{
+  margin: 0; }
+
+
+#hero h1 {
+  color: #088178;
+
+}
+
+.hero-button {
+  display: inline-block;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 14px 80px 14px 65px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  color: black; /* Ajusta el color del texto */
+  margin-top: 10px;
+  background-color: #fff; /* Fondo blanco */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones */
+}
+
+.hero-button:hover {
+  background-color: #088178; /* Fondo al pasar el ratón */
+  color: #fff; /* Cambia el color del texto al pasar el ratón */
+}
+
+
+#feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 100px;
+  background-color: #f9e6f3; /* Fondo rosado claro */
+}
+
+.informacion {
+  width: 40%; /* Ajusta para ocupar menos espacio */
+  padding: 20px 40px;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: left;
+}
+
+.informacion h1 {
+  font-size: 30px;
+  color: #e91e63; /* Tono púrpura para el título */
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.informacion p {
+  font-size: 18px;
+  color: #6d6d6d; /* Color gris para el texto */
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.informacion button {
+  padding: 12px 30px;
+  background-color: #e91e63; /* Color rosa fuerte */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.informacion button a {
+  color: inherit;  /* Hereda el color blanco del botón */
+  text-decoration: none;
+}
+
+
+.informacion button:hover {
+  background-color: #d81b60; /* Cambio de color al pasar el mouse */
+}
+
+.informacion:hover {
+  transform: scale(1.05);
+}
+
+.cuadrado {
+  display: flex;
+  gap: 20px; /* Espacio entre los elementos */
+  justify-content: space-between;
+  width: 50%;
+}
+
+.cuadrado div {
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px 20px 20px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  width: 250px; /* Ajusta el tamaño de los bloques */
+  text-align: center;
+}
+
+.cuadrado img {
+  width: 100px; /* Tamaño ajustado de las imágenes */
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 20px; /* Redondea las imágenes */
+}
+
+.cuadrado h4 {
+  font-size: 18px;
+  color: #9c27b0;
+  font-weight: bold;
+}
+
+.cuadrado p {
+  color: #6d6d6d;
+  font-weight: 700;
+  margin: 0;
+font-size: 12px;
+}
+
+.cuadrado h1 {
+  font-size: 28px;
+}
+
+#hero-section {
+  background-image: url(imagenes/backgroundimage.webp);
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#hero-section h1 {
+  font-size: 50px;
+  color: #333;
+  margin-bottom: 60px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 10%;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 50px 80px 80px 80px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.line {
+  width: 40px;
+  height: 3px;
+  background-color: #b02878;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.grid-container .card:nth-child(-n+3) {
+  margin-bottom: 90px; /* Aumenta esta cantidad si deseas mayor separación */
+}
+
+
+#footer {
+  background-color: #262525;
+  color: #ccc;
+  padding: 70px 20px; /* Aumenté el padding para hacer el footer más alto */
+  margin-top: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px; /* Aumenté el ancho máximo */
+  margin: 0 auto;
+  padding-bottom: 40px; /* Aumenté el espacio inferior */
+  border-bottom: 1px solid #333;
+}
+
+.footer-column {
+  flex: 1;
+  padding: 0 40px; /* Aumenté el padding lateral */
+}
+
+.footer-column h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 1.5rem; /* Tamaño de texto mayor */
+}
+
+.footer-column p, .footer-column a {
+  color: #ccc;
+  font-size: 1.1rem; /* Tamaño de texto mayor */
+  margin-bottom: 12px;
+  display: block;
+}
+
+.footer-column a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column input[type="email"] {
+  padding: 12px; /* Aumenté el padding del input */
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem; /* Aumenté el tamaño del texto */
+}
+
+.footer-column button {
+  background-color: #c5b07d;
+  color: #222;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.footer-column button i {
+  margin-left: 5px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.social-links {
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  color: #ccc;
+  margin: 0 12px;
+  font-size: 1.5rem; /* Aumenté el tamaño de los íconos sociales */
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.logo {
+  width: 60px; /* Aumenté el tamaño del logo */
+  margin-bottom: 3px;
+}
+
+.fas, .fab {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.treatment-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  background-color: #f5f4f4;
+}
+
+.image-container {
+  flex: 1;
+  margin: 0; /* Elimina márgenes adicionales */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+
+}
+
+.text-container {
+  flex: 1;
+  padding: 0 40px;
+  color: #333;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente los elementos */
+  gap: 15px; /* Espacio entre cada elemento */
+  margin-top: -65px; /* Ajuste hacia arriba */
+}
+
+.text-container h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 50px;
+  font-style: italic;
+}
+
+.text-container h4 {
+  font-size: 1.2rem;
+  font-weight: 900;
+  font-style: italic;
+  color: #7a7a7a;
+  margin: 0;
+  margin-left: 260px; /* Desplaza el h4 hacia la derecha */
+}
+
+.text-container p {
+  font-size: 19px;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 80%; /* Ajusta este valor hasta que el texto se divida donde desees */
+  margin-left: 120px;
+  color: #8a8a8a; /* Color gris más claro */
+  font-weight: 550;
+}
+
+.cta-button {
+  display: block; /* Cambiado a block para permitir centrado con margin */
+  margin: 20px auto; /* Espacio arriba y abajo, y centrado horizontalmente */
+  padding: 20px 40px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-top: 20px; /* Espacio adicional para el botón */
+  align-self: start; /* Alinea el botón a la izquierda */
+}
+
+.cta-button:hover {
+  background-color: #c2185b;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: #222;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 1500px ) {
+  #hero {
+  height: 65vh;
+  }
+}
+
+@media (max-width: 1355px) {
+  .informacion h2 {
+    font-size: 22px; /* Tamaño ajustado */
+    text-align: center; /* Centrar el texto */
+    margin: 0 0 10px 0; /* Margen inferior */
+    word-wrap: break-word; /* Permite que el texto se divida en líneas */
+    max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
+} 
+.text-container h2 {
+    font-size: 33px;
+    margin-top: 50px;
+    padding-top: 25px;
+  }
+}
+
+@media (max-width: 1395px) {
+  #feature, .grid-container {
+    flex-direction: column;
+    padding: 40px 20px;
+}
+.informacion {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.cuadrado {
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.treatment-section {
+  flex-direction: row; /* Cambiar a columna para pantallas pequeñas */
+  text-align: center; /* Centrar el texto */
+}
+
+.image-container img {
+  max-width: 90%; /* Ajustar imagen para pantallas pequeñas */
+  height: auto;
+}
+
+.text-container {
+  padding: 0 20px; /* Reducir el padding lateral */
+  margin-top: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.text-container h2 {
+  font-size: 25px; /* Ajustar el tamaño de la fuente */
+  margin-left: 0; /* Eliminar margen izquierdo */
+}
+
+.text-container h4 {
+  font-size: 16px;
+  margin-left: 0; /* Eliminar margen izquierdo */
+}
+
+.text-container p {
+  font-size: 17px;
+  margin-left: 0; /* Eliminar margen izquierdo */
+}
+
+.cta-button {
+  font-size: 15px;
+}
+
+#feature {
+  flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+  padding: 30px 20px; /* Reducir padding */
+}
+
+.informacion {
+  width: 100%; /* Hacer que ocupe el 100% */
+  padding: 20px; /* Espaciado interior */
+  text-align: center; /* Centrar el texto */
+  margin-bottom: 20px;
+}
+
+.cuadrado {
+  width: 100%; /* Hacer que ocupe el 100% */
+  flex-direction: row; /* Cambiar a columna para móviles */
+  align-items: center; /* Centrar elementos */
+  justify-content: space-evenly;
+}
+
+/* Ajustes para el título H2 en Feature */
+.informacion h2 {
+  font-size: 22px; /* Tamaño ajustado */
+  text-align: center; /* Centrar el texto */
+  margin: 0 0 10px 0; /* Margen inferior */
+  word-wrap: break-word; /* Permite que el texto se divida en líneas */
+  max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
+}
+
+#hero-section {
+  display: flex;
+  flex-direction: column; /* Cambiar a columna */
+  align-items: center; /* Centrar horizontalmente */
+  padding: 20px 10px; /* Ajustar padding */
+}
+
+#hero-section h1 {
+  font-size: 32px; /* Ajustar tamaño de fuente */
+  margin-bottom: 15px; /* Espacio debajo del título */
+  text-align: center; /* Centrar el texto */
+}
+
+#hero-section p {
+  font-size: 16px; /* Tamaño de fuente más pequeño */
+  margin: 0 0 15px; /* Espacio debajo del párrafo */
+  padding: 0 10px; /* Ajustar padding lateral */
+  text-align: center; /* Centrar el texto */
+}
+
+
+.grid-container {
+display: grid;
+grid-template-columns: 1fr; /* Cambia a una sola columna */
+gap: 20px; /* Espacio de 20px entre filas */
+padding: 0 10%; /* Padding horizontal del contenedor */
+}
+
+.grid-container .card {
+margin: 20px; /* Margen de 20px en todos los lados */
+padding: 50px 80px 80px 80px; /* Padding interno */
+border-radius: 8px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+.grid-container .card:nth-child(-n+3) {
+  margin-bottom: 20px;
+}
+}
+
+
+@media (max-width: 1305px) {
+  #hero {
+    height: 40vh;
+    }
+}
+
+@media (max-width: 1185px) {
+  .text-container h2 {
+    font-size: 33px;
+    padding-top: 25px;
+    margin-top: -25px;
+  }
+
+  #hero h1 {
+    font-size: 35px;
+  }
+
+  #hero h2 {
+    font-size: 19px;
+  }
+
+  .hero-button {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 1184px) {
+  #feature, .grid-container {
+    flex-direction: column;
+    padding: 40px 20px;
+}
+.informacion {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.cuadrado {
+    width: 100%;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.treatment-section {
+  flex-direction: row; /* Cambiar a columna para pantallas pequeñas */
+  text-align: center; /* Centrar el texto */
+}
+
+.image-container img {
+  max-width: 90%; /* Ajustar imagen para pantallas pequeñas */
+  height: auto;
+}
+
+.text-container {
+  padding: 0 20px; /* Reducir el padding lateral */
+  margin-top: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.text-container h2 {
+  font-size: 25px; /* Ajustar el tamaño de la fuente */
+  margin-left: 0; /* Eliminar margen izquierdo */
+}
+
+.text-container h4 {
+  font-size: 16px;
+  margin-left: 0; /* Eliminar margen izquierdo */
+}
+
+.text-container p {
+  font-size: 17px;
+  margin-left: 0; /* Eliminar margen izquierdo */
+}
+
+.cta-button {
+  font-size: 15px;
+}
+
+#feature {
+  flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+  padding: 30px 20px; /* Reducir padding */
+}
+
+.informacion {
+  width: 100%; /* Hacer que ocupe el 100% */
+  padding: 20px; /* Espaciado interior */
+  text-align: center; /* Centrar el texto */
+  margin-bottom: 20px;
+}
+
+.cuadrado {
+  width: 100%; /* Hacer que ocupe el 100% */
+  flex-direction: row; /* Cambiar a columna para móviles */
+  align-items: center; /* Centrar elementos */
+  justify-content: space-evenly;
+}
+
+/* Ajustes para el título H2 en Feature */
+.informacion h2 {
+  font-size: 22px; /* Tamaño ajustado */
+  text-align: center; /* Centrar el texto */
+  margin: 0 0 10px 0; /* Margen inferior */
+  word-wrap: break-word; /* Permite que el texto se divida en líneas */
+  max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
+}
+
+#hero-section {
+  display: flex;
+  flex-direction: column; /* Cambiar a columna */
+  align-items: center; /* Centrar horizontalmente */
+  padding: 20px 10px; /* Ajustar padding */
+}
+
+#hero-section h1 {
+  font-size: 32px; /* Ajustar tamaño de fuente */
+  margin-bottom: 15px; /* Espacio debajo del título */
+  text-align: center; /* Centrar el texto */
+}
+
+#hero-section p {
+  font-size: 16px; /* Tamaño de fuente más pequeño */
+  margin: 0 0 15px; /* Espacio debajo del párrafo */
+  padding: 0 10px; /* Ajustar padding lateral */
+  text-align: center; /* Centrar el texto */
+}
+
+
+.grid-container {
+display: grid;
+grid-template-columns: 1fr; /* Cambia a una sola columna */
+gap: 20px; /* Espacio de 20px entre filas */
+padding: 0 10%; /* Padding horizontal del contenedor */
+}
+
+.grid-container .card {
+margin: 20px; /* Margen de 20px en todos los lados */
+padding: 50px 80px 80px 80px; /* Padding interno */
+border-radius: 8px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+.grid-container .card:nth-child(-n+3) {
+  margin-bottom: 20px;
+}
+}
+
+
+@media (max-width: 1038px) {
+  #hero {
+    padding: 0 20px; /* Reducir el padding para móviles */
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
+    background-position: center; /* Asegura que la imagen se vea más a la izquierda */
+    display: flex; /* Asegura que los elementos se alineen en fila */
+    justify-content: flex-start; /* Alinea los elementos al principio */
+    flex-direction: row; /* Asegura que los elementos se alineen en fila */
+}
+
+.div {
+    max-width: 200px; /* Ajusta el tamaño del div a un valor más pequeño */
+    margin-left: 20px; /* Espacio entre la imagen y el div */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    padding: 10px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex; /* Flexbox para alinear texto */
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: flex-start; /* Alinea el texto a la izquierda */
+}
+
+  .hero-button {
+      font-size: 14px; /* Tamaño de fuente más pequeño para el botón */
+      padding: 10px 20px; /* Ajustar padding según sea necesario */
+  }
+  #hero hr {
+    display: none; /* Ocultar las líneas horizontales */
+}
+
+#hero h1, #hero h2 {
+    font-size: 19px; /* Tamaño de fuente más pequeño */
+    line-height: 40px; /* Ajustar el espaciado */
+    text-shadow: #1a1a1a;
+    margin: 0; /* Elimina márgenes para evitar desbordes */
+}
+}
+
+
+/* Efecto de menú hamburguesa en pantallas pequeñas */
+@media (max-width: 768px) {
+  #header {
+      padding: 20px;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+  
+  .menu-icon {
+      display: block;
+      position: absolute;
+      right: 25px; /* Ajusta para pegar el ícono a la derecha */
+      cursor: pointer;
+  }
+
+  #navbar {
+      display: none; /* Oculta el menú por defecto en pantallas pequeñas */
+      flex-direction: column;
+      position: absolute;
+      top: 1px;
+      right: 0;
+      width: 100%;
+      background-color: #f8f8f8;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+      z-index: 10;
+  }
+
+  #navbar.active {
+      display: flex;
+  }
+
+
+  #navbar li {
+      padding: 12px;
+      text-align: center;
+  }
+
+
+  #navbar .menu-icon {
+    display: block;
+        position: sticky;
+        right: 0px;
+        cursor: pointer;
+      
+} }
+
+
+
+/* Ajustes de responsividad en distintas secciones */
+@media (max-width: 768px) {
+  #feature, .grid-container {
+      flex-direction: column;
+      padding: 40px 20px;
+  }
+  .informacion {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+  }
+  .cuadrado {
+      width: 100%;
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+      align-content: space-evenly;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    padding: 0 20px; /* Reducir el padding para móviles */
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
+    background-position: center; /* Asegura que la imagen se vea más a la izquierda */
+    display: flex; /* Asegura que los elementos se alineen en fila */
+    justify-content: flex-start; /* Alinea los elementos al principio */
+    flex-direction: row; /* Asegura que los elementos se alineen en fila */
+}
+
+.div {
+    max-width: 200px; /* Ajusta el tamaño del div a un valor más pequeño */
+    margin-left: 20px; /* Espacio entre la imagen y el div */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    padding: 10px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex; /* Flexbox para alinear texto */
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: flex-start; /* Alinea el texto a la izquierda */
+}
+
+  .hero-button {
+      font-size: 12px; /* Tamaño de fuente más pequeño para el botón */
+      padding: 10px 20px; /* Ajustar padding según sea necesario */
+  }
+  #hero hr {
+    display: none; /* Ocultar las líneas horizontales */
+}
+
+#hero h1, #hero h2 {
+    font-size: 17px; /* Tamaño de fuente más pequeño */
+    line-height: 40px; /* Ajustar el espaciado */
+    text-shadow: #1a1a1a;
+    margin: 0; /* Elimina márgenes para evitar desbordes */
+}
+}
+
+
+
+@media (max-width: 768px) {
+  .treatment-section {
+      flex-direction: column; /* Cambiar a columna para pantallas pequeñas */
+      text-align: center; /* Centrar el texto */
+  }
+
+  .image-container img {
+      max-width: 90%; /* Ajustar imagen para pantallas pequeñas */
+      height: auto;
+  }
+
+  .text-container {
+      padding: 0 20px; /* Reducir el padding lateral */
+      margin-top: 20px; /* Espacio entre la imagen y el texto */
+  }
+
+  .text-container h2 {
+      font-size: 2rem; /* Ajustar el tamaño de la fuente */
+      margin-left: 0; /* Eliminar margen izquierdo */
+  }
+
+  .text-container h4 {
+      margin-left: 0; /* Eliminar margen izquierdo */
+  }
+
+  .text-container p {
+      margin-left: 0; /* Eliminar margen izquierdo */
+  }
+}
+
+@media (max-width: 768px) {
+  #feature {
+      flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+      padding: 30px 20px; /* Reducir padding */
+  }
+
+  .informacion {
+      width: 100%; /* Hacer que ocupe el 100% */
+      padding: 20px; /* Espaciado interior */
+      text-align: center; /* Centrar el texto */
+      margin-bottom: 20px;
+  }
+
+  .cuadrado {
+      width: 100%; /* Hacer que ocupe el 100% */
+      flex-direction: row; /* Cambiar a columna para móviles */
+      align-items: center; /* Centrar elementos */
+      justify-content: space-evenly;
+  }
+
+  /* Ajustes para el título H2 en Feature */
+  .informacion h2 {
+      font-size: 22px; /* Tamaño ajustado */
+      text-align: center; /* Centrar el texto */
+      margin: 0 0 10px 0; /* Margen inferior */
+      word-wrap: break-word; /* Permite que el texto se divida en líneas */
+      max-width: 100%; /* Asegura que no exceda el ancho del contenedor */
+  }
+}
+
+@media (max-width: 768px) {
+  #hero-section {
+      display: flex;
+      flex-direction: column; /* Cambiar a columna */
+      align-items: center; /* Centrar horizontalmente */
+      padding: 20px 10px; /* Ajustar padding */
+  }
+
+  #hero-section h1 {
+      font-size: 32px; /* Ajustar tamaño de fuente */
+      margin-bottom: 15px; /* Espacio debajo del título */
+      text-align: center; /* Centrar el texto */
+  }
+
+  #hero-section p {
+      font-size: 16px; /* Tamaño de fuente más pequeño */
+      margin: 0 0 15px; /* Espacio debajo del párrafo */
+      padding: 0 10px; /* Ajustar padding lateral */
+      text-align: center; /* Centrar el texto */
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+    gap: 20px; /* Espacio de 20px entre filas */
+    padding: 0 10%; /* Padding horizontal del contenedor */
+  }
+
+  .grid-container .card {
+    margin: 20px; /* Margen de 20px en todos los lados */
+  padding: 50px 80px 80px 80px; /* Padding interno */
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}}
+
+@media (max-width: 629px) and (min-width: 320px) {
+  .footer-content {
+    flex-direction: row;
+    flex-wrap: wrap; /* Opcional: Permite que los elementos pasen a una nueva línea si es necesario */
+  }
+
+  #feature .cuadrado {
+    display: flex;
+    flex-direction: column; /* Cambia la disposición a columna */
+    align-items: center; /* Alinea los elementos al centro */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    gap: 10px; /* Espacio entre los elementos */
+  }
+
+  #feature .cuadrado .elemento {
+    width: 100%; /* Los elementos ocuparán todo el ancho disponible */
+    margin-bottom: 10px; /* Espacio entre los elementos */
+  }
+  #hero h1, #hero h2 {
+    font-size: 14px;
+    line-height: 40px;
+    text-shadow: #1a1a1a;
+    margin: 0;
+}
+}
+
+
+
+
+
+@media (max-width: 425px) and (min-width: 320px) {
+  /* Asegurarse de que todo el contenedor ocupe el 100% del ancho */
+  body, html {
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar padding por defecto */
+    width: 100%; /* Asegurar que ocupe todo el ancho */
+  }
+
+  #feature, .grid-container, .cuadrado {
+    width: 100%; /* Asegura que estos contenedores ocupen el 100% del ancho */
+    padding: 0; /* Eliminar cualquier padding que esté limitando el ancho */
+  }
+
+  /* Para el contenedor cuadrado, si es necesario */
+  #feature .cuadrado {
+    padding: 0 10px; /* Ajusta el padding si es necesario */
+    gap: 10px; /* Asegura un espacio entre los elementos */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  }
+
+  /* Asegura que los elementos internos ocupen el 100% */
+  #feature .cuadrado .elemento {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Para otras secciones como hero */
+  #hero, #hero-section, .informacion, .grid-container {
+    width: 100%; /* Asegura que todo ocupe el ancho completo */
+    padding: 0 10px; /* Ajusta padding si es necesario */
+  }
+
+  /* También podemos asegurarnos de que el contenido de las tarjetas ocupe todo el ancho */
+  .grid-container .card {
+    width: 100%; /* Tarjetas ocupando el 100% de su contenedor */
+    margin: 0; /* Eliminar márgenes */
+  }
+
+  /* Otros ajustes si es necesario */
+  .text-container, .image-container img {
+    width: 100%; /* Asegura que el contenido dentro de las cajas ocupe el 100% del ancho */
+  }
+
+  .hero-button {
+    font-size: 14px; /* Ajustar tamaño del botón */
+    padding: 8px 16px; /* Ajustar padding para dispositivos más pequeños */
+  }
+}
+
